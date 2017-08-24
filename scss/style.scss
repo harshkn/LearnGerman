@@ -1,0 +1,38 @@
+//@import "compass/css3";
+
+
+$color: #d3ebea;
+
+body{
+  background:lighten($color,20);
+  padding:100px;
+  color: darken($color,20);
+}
+h1{
+  text-shadow:0 1px 0 lighten($color,27);
+}
+.list-item-1{
+  margin:0;
+  padding:0;
+  list-style:none;
+  
+  li{
+   color:darken($color,10);
+   margin:5px 0 5px 10px;
+   text-shadow:0 1px 0 lighten($color,50);
+    
+   &:before{
+       content: '\25ca';
+       display:inline-block;
+       color: lighten($color,40);
+        padding:2px;
+        border-radius:.5px;
+        float:left;
+        clear:left;
+        text-shadow:-1px -1px 0 darken($color, 10);
+        margin-left:-10px;
+        padding:2px 10px 0 0;
+   }
+      
+  } 
+}
